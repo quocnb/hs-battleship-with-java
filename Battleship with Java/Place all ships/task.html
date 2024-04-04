@@ -1,0 +1,127 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>Now that we've figured out the rules of the game let's continue with positioning the ships and drawing them on our game field! The goal of this stage is to place all the ships on the game field according to the rules.</p>
+<h5 id="objectives">Objectives</h5>
+<p>You have 5 ships: </p>
+<ul>
+<li>Aircraft Carrier is 5 cells</li>
+<li>Battleship is 4 cells</li>
+<li>Submarine is 3 cells</li>
+<li>Cruiser is also 3 cells</li>
+<li>Destroyer is 2 cells.</li>
+</ul>
+<p>In this stage, you should arrange them all on the game field.</p>
+<ol>
+<li>Start placing your ships with the largest one.</li>
+<li>For each ship read two coordinates: the beginning and the end of the ship. Again, the order of the coordinates does not matter.</li>
+<li>Add new ships to a game field and output it the same way as in the previous stage.</li>
+<li>If the user has entered coordinates in such a way that the length of the created ship does not match the expected length, this should be considered an incorrect input. Also, the game rules state that ships cannot be adjacent to each other. For both of these cases report it with a message containing <code class="java">Error</code> word.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Notice that it's not part of the input.</p>
+<pre><code class="language-no-highlight">  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Enter the coordinates of the Aircraft Carrier (5 cells):
+
+&gt; F3 F7
+
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Enter the coordinates of the Battleship (4 cells):
+
+&gt; A1 D1
+
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ ~ ~
+C O ~ ~ ~ ~ ~ ~ ~ ~ ~
+D O ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Enter the coordinates of the Submarine (3 cells):
+
+&gt; J7 J10
+
+Error! Wrong length of the Submarine! Try again:
+
+&gt; J10 J8
+
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ ~ ~
+C O ~ ~ ~ ~ ~ ~ ~ ~ ~
+D O ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ O O O
+
+Enter the coordinates of the Cruiser (3 cells):
+
+&gt; B9 D8
+
+Error! Wrong ship location! Try again:
+
+&gt; B9 D9
+
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ O ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ O O O
+
+Enter the coordinates of the Destroyer (2 cells):
+
+&gt; E6 D6
+
+Error! You placed it too close to another one. Try again:
+
+&gt; I2 J2
+
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ O ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+</code></pre>
+
+</div>

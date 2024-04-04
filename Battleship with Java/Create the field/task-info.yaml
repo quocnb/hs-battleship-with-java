@@ -1,0 +1,164 @@
+type: edu
+files:
+  - name: src/battleship/Main.java
+    visible: true
+    text: |
+      package battleship;
+      
+      public class Main {
+      
+          public static void main(String[] args) {
+              System.out.println("Hello World!");
+          }
+      }
+    learner_created: false
+  - name: test/Tests.java
+    visible: false
+    text: |-
+      import org.hyperskill.hstest.dynamic.DynamicTest;
+      import org.hyperskill.hstest.exception.outcomes.WrongAnswer;
+      import org.hyperskill.hstest.stage.StageTest;
+      import org.hyperskill.hstest.testcase.CheckResult;
+      import org.hyperskill.hstest.testing.TestedProgram;
+      
+      import java.util.Arrays;
+      import java.util.regex.Matcher;
+      import java.util.regex.Pattern;
+      import java.util.stream.IntStream;
+      
+      
+      public class Tests extends StageTest<String> {
+      
+          String[][] data = {
+                  {"F3 F7", "5", "F3 F4 F5 F6 F7"},
+                  {"A1 D1", "4", "A1 B1 C1 D1"},
+                  {"C4 C2", "3", "C2 C3 C4"},
+                  {"F4 E4", "2", "E4 F4"},
+                  {"G8 G10", "3", "G8 G9 G10"}
+          };
+      
+          @DynamicTest(data = "data")
+          CheckResult test1(String inp, String len, String parts) {
+              TestedProgram main = new TestedProgram();
+              String output = main.start().trim();
+      
+              if (!isGameFieldPrinted(output)) {
+                  return CheckResult.wrong("Your program should print an empty game field at the start of the program.");
+              }
+              getFieldMatrix(output);
+              if (!output.toLowerCase().contains("ship")) {
+                  return CheckResult.wrong("After starting the program, you should request " +
+                          "the coordinates of the ship in that way:\n" +
+                          "\"Enter the coordinates of the ship:\"");
+              }
+              if (!main.isWaitingInput()) {
+                  return CheckResult.wrong("Your program should request the coordinates when the initial messages are " +
+                          "printed");
+              }
+              String output2 = main.execute(inp).trim().toLowerCase();
+              Matcher matcher = Pattern.compile("length:? *?(-?\\d+)").matcher(output2);
+              if (!matcher.find()) {
+                  return CheckResult.wrong("When the correct coordinates were provided there should be a \"Length: \" substring in " +
+                          "your output, followed by an integer value representing the length of a ship");
+              }
+              if (!matcher.group(1).equals(len)) {
+                  return CheckResult.wrong("Incorrect length of the provided ship found in your output." +
+                          (matcher.group(1).startsWith("-")
+                                  ? " The order of the coordinates (start to end or end to start) does not matter" : ""));
+              }
+              for (String p : parts.toLowerCase().split(" ")) {
+                  if (!output2.contains(p)) {
+                      return CheckResult.wrong("When the ship correct coordinates are provided, coordinates for all " +
+                              "parts of the ship should be printed, but some of them were not found in your output");
+                  }
+              }
+              Arrays.stream("ABCDEFGHIJ".split(""))
+                      .flatMap(letter ->
+                              Arrays.stream(
+                                      IntStream.rangeClosed(1, 10)
+                                              .mapToObj(String::valueOf)
+                                              .map(number -> letter + number)
+                                              .toArray(String[]::new)
+                              )
+                      )
+                      .forEach(el -> {
+                          if (!parts.contains(el) && output2.contains(el.toLowerCase())) {
+                              throw new WrongAnswer("Unexpected coordinates were found in " +
+                                      "your output as ship's coordinates.");
+                          }
+                      });
+      
+              return CheckResult.correct();
+          }
+      
+          String[][] incorrect = {
+                  {"A3 D5", "Coordinates are not on the same line"},
+                  {"F6 C2", "Coordinates are not on the same line"},
+                  {"A0 A2", "Coordinates are out of bounds"},
+                  {"B9 B11", "Coordinates are out of bounds"},
+                  {"J5 M5", "Coordinates are out of bounds"},
+                  {"L13 N18", "Coordinates are out of bounds"},
+          };
+      
+          @DynamicTest(data = "incorrect")
+          CheckResult test2(String inp, String feedback) {
+              TestedProgram main = new TestedProgram();
+              main.start();
+              String output = main.execute(inp);
+              if (!output.toLowerCase().contains("error"))
+                  return CheckResult.wrong(String.format("Your program should report an error if there is an input mistake." +
+                          " (%s)", feedback));
+              return CheckResult.correct();
+          }
+      
+          String[][] getFieldMatrix(String output) {
+      
+              WrongAnswer cantParseException = new WrongAnswer(
+                      "Can't parse the game field\n" +
+                              "Make sure you print it like in examples!");
+      
+              String[] splittedOutput = output.split("\n");
+              String[][] matrix = new String[10][10];
+      
+              try {
+                  int index = 0;
+                  while (!(splittedOutput[index].contains("1") &&
+                          splittedOutput[index].contains("2") &&
+                          splittedOutput[index].contains("10"))) {
+                      index++;
+                      if (index > 1000) {
+                          throw cantParseException;
+                      }
+                  }
+                  index++;
+      
+                  for (int i = 0; i < 10; i++) {
+                      String temp = splittedOutput[index].substring(2).trim();
+                      if (temp.length() == 0) {
+                          throw cantParseException;
+                      }
+                      String[] splittedLine = temp.trim().split(" ");
+                      if (splittedLine.length != 10) {
+                          throw cantParseException;
+                      }
+                      matrix[i] = splittedLine;
+                      index++;
+                  }
+              } catch (IndexOutOfBoundsException ignored) {
+                  throw cantParseException;
+              }
+      
+              return matrix;
+          }
+      
+          boolean isGameFieldPrinted(String output) {
+              return output.contains("1") && output.contains("2") && output.contains("10");
+          }
+      }
+    learner_created: false
+feedback_link: https://hyperskill.org/projects/383/stages/2281/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 15:53:20 UTC"
+record: 1

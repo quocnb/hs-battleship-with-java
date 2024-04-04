@@ -1,0 +1,14 @@
+type: hyperskill
+title: Battleship with Java
+language: English
+summary: "<div><div class=\"alert alert-primary\">You will practice concepts frequently\
+  \ tested in technical interviews at top tech companies.</div>\r\n<p>Writing games\
+  \ is probably one of the most exciting tasks in programming. While creating your\
+  \ first console game, you will learn about processing user input and handling errors.</p></div><br/><br/>Learn\
+  \ more at <a href=\"https://hyperskill.org/projects/383?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card\"\
+  >https://hyperskill.org/projects/383</a>"
+programming_language: Java
+programming_language_version: 11
+content:
+  - Battleship with Java
+mode: Study

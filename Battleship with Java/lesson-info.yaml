@@ -1,0 +1,9 @@
+type: framework
+content:
+  - Create the field
+  - Place all ships
+  - Add shooting functionality
+  - Implement the  fog of war  feature
+  - Define rules to end the game
+  - Add multiplayer option
+current_task: 5
