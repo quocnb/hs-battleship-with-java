@@ -9,17 +9,15 @@ public class DataManagement {
     final static String HIT_SYMBOL = "X";
     final static String MISS_SYMBOL = "M";
 
-    private static DataManagement _sharedInstance;
-    private static String[][] field;
+    private final String[][] field;
     private static ArrayList<String> rowIndexes;
-    private static ArrayList<ArrayList<Coordinate>> ships;
+    private final ArrayList<ArrayList<Coordinate>> ships;
     private HitStatus lastHitStatus;
 
-    public static DataManagement shared() {
-        if (_sharedInstance == null) {
-            _sharedInstance = new DataManagement();
-        }
-        return _sharedInstance;
+    public DataManagement() {
+        rowIndexes = createFieldColumnIndexes(FIELD_SIZE);
+        field = createField(rowIndexes);
+        ships = new ArrayList<>();
     }
 
     public Coordinate generateCoordinate(String coordinate) throws Exception {
@@ -38,7 +36,6 @@ public class DataManagement {
     }
 
     public void displayField(boolean hideShip) {
-        System.out.println();
         for (String[] strings : field) {
             String rowData = String.join(" ", strings);
             if (hideShip) {
@@ -46,7 +43,6 @@ public class DataManagement {
             }
             System.out.println(rowData);
         }
-        System.out.println();
     }
 
     public void addShip(Ship ship, Coordinate front, Coordinate back) throws Exception {
@@ -95,7 +91,7 @@ public class DataManagement {
         for (int i = minRow; i <= maxRow; i++) {
             for (int j = minColumn; j <= maxColumn; j++) {
                 if (field[i][j].equals(SHIP_SYMBOL)) {
-                    throw new Exception("Error! You placed it too close to another one. Try again:\n");
+                    throw new Exception("Error! You placed it too close to another one. Try again:");
                 }
             }
         }
@@ -114,12 +110,6 @@ public class DataManagement {
             }
         }
         ships.add(shipCoordinate);
-    }
-
-    private DataManagement() {
-        rowIndexes = createFieldColumnIndexes(FIELD_SIZE);
-        field = createField(rowIndexes);
-        ships = new ArrayList<>();
     }
 
     private ArrayList<String> createFieldColumnIndexes(int size) {

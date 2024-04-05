@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.248s</div>
+<div class="counter">0.286s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">start</td>
-<td class="success">0.248s</td>
+<td class="success">0.286s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -89,6 +89,7 @@
 <span class="code">
 <pre>?[1;31m
 Start test 1?[0m
+Player 1, place your ships on the game field
 
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -103,6 +104,7 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 Enter the coordinates of the Aircraft Carrier (5 cells):
+
 &gt; F3 F7
 
   1 2 3 4 5 6 7 8 9 10
@@ -118,6 +120,7 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 Enter the coordinates of the Battleship (4 cells):
+
 &gt; A1 D1
 
   1 2 3 4 5 6 7 8 9 10
@@ -133,8 +136,11 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 Enter the coordinates of the Submarine (3 cells):
+
 &gt; J7 J10
+
 Error! Wrong length of the Submarine! Try again:
+
 &gt; J10 J8
 
   1 2 3 4 5 6 7 8 9 10
@@ -150,8 +156,11 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ O O O
 
 Enter the coordinates of the Cruiser (3 cells):
+
 &gt; B9 D8
+
 Error! Wrong ship location! Try again:
+
 &gt; B9 D9
 
   1 2 3 4 5 6 7 8 9 10
@@ -167,7 +176,9 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ O O O
 
 Enter the coordinates of the Destroyer (2 cells):
+
 &gt; E6 D6
+
 Error! You placed it too close to another one. Try again:
 
 &gt; I2 J2
@@ -184,398 +195,9 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ O ~ ~ ~ ~ ~ ~ ~ ~
 J ~ O ~ ~ ~ ~ ~ O O O
 
-The game starts!
-
-  1 2 3 4 5 6 7 8 9 10
-A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-Take a shot!
-&gt; A1
-
-  1 2 3 4 5 6 7 8 9 10
-A X ~ ~ ~ ~ ~ ~ ~ ~ ~
-B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; A2
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; B1
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ ~ ~
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; C1
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; D1
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D X ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You sank a ship! Specify a new target:
-&gt; E4
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D X ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ M ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; B9
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D X ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ M ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; C9
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ M ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; D9
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You sank a ship! Specify a new target:
-&gt; E9
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; F3
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; F4
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; F5
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; F6
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; F7
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You sank a ship! Specify a new target:
-&gt; F10
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; G8
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; G5
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; H2
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ M ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; I2
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ M ~ ~ ~ ~ ~ ~ ~ ~
-I ~ X ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; J2
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ M ~ ~ ~ ~ ~ ~ ~ ~
-I ~ X ~ ~ ~ ~ ~ ~ ~ ~
-J ~ X ~ ~ ~ ~ ~ ~ ~ ~
-
-You sank a ship! Specify a new target:
-&gt; J6
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ M ~ ~ ~ ~ ~ ~ ~ ~
-I ~ X ~ ~ ~ ~ ~ ~ ~ ~
-J ~ X ~ ~ ~ M ~ ~ ~ ~
-
-You missed. Try again:
-&gt; J8
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ M ~ ~ ~ ~ ~ ~ ~ ~
-I ~ X ~ ~ ~ ~ ~ ~ ~ ~
-J ~ X ~ ~ ~ M ~ X ~ ~
-
-You hit a ship! Try again:
-&gt; J9
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ M ~ ~ ~ ~ ~ ~ ~ ~
-I ~ X ~ ~ ~ ~ ~ ~ ~ ~
-J ~ X ~ ~ ~ M ~ X X ~
-
-You hit a ship! Try again:
-&gt; J10
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ X ~
-C X ~ ~ ~ ~ ~ ~ ~ X ~
-D X ~ ~ ~ ~ ~ ~ ~ X ~
-E ~ ~ ~ M ~ ~ ~ ~ M ~
-F ~ ~ X X X X X ~ ~ M
-G ~ ~ ~ ~ M ~ ~ M ~ ~
-H ~ M ~ ~ ~ ~ ~ ~ ~ ~
-I ~ X ~ ~ ~ ~ ~ ~ ~ ~
-J ~ X ~ ~ ~ M ~ X X X
-
-You sank the last ship. You won. Congratulations!
-?[1;31m
-Start test 2?[0m
+Press Enter and pass the move to another player
+&gt; 
+Player 2, place your ships to the game field
 
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -590,7 +212,8 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 Enter the coordinates of the Aircraft Carrier (5 cells):
-&gt; J3 J7
+
+&gt; H2 H6
 
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -600,78 +223,76 @@ D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ O O O O O ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ O O O O O ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 Enter the coordinates of the Battleship (4 cells):
-&gt; C8 B8
-Error! Wrong length of the Battleship! Try again:
-&gt; C8 F8
+
+&gt; F3 F6
+
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ O O O O O ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Enter the coordinates of the Submarine (3 cells):
+
+&gt; H8 F8
+
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Enter the coordinates of the Cruiser (3 cells):
+
+&gt; D4 D6
+
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ O O O ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Enter the coordinates of the Destroyer (2 cells):
+
+&gt; D8 C8
 
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 C ~ ~ ~ ~ ~ ~ ~ O ~ ~
-D ~ ~ ~ ~ ~ ~ ~ O ~ ~
-E ~ ~ ~ ~ ~ ~ ~ O ~ ~
-F ~ ~ ~ ~ ~ ~ ~ O ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ O O O ~ O ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ O O O O O ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-Enter the coordinates of the Submarine (3 cells):
-&gt; A1 C2
-Error! Wrong ship location! Try again:
-&gt; A1 C1
-
-  1 2 3 4 5 6 7 8 9 10
-A O ~ ~ ~ ~ ~ ~ ~ ~ ~
-B O ~ ~ ~ ~ ~ ~ ~ ~ ~
-C O ~ ~ ~ ~ ~ ~ O ~ ~
-D ~ ~ ~ ~ ~ ~ ~ O ~ ~
-E ~ ~ ~ ~ ~ ~ ~ O ~ ~
-F ~ ~ ~ ~ ~ ~ ~ O ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ O O O O O ~ ~ ~
-
-Enter the coordinates of the Cruiser (3 cells):
-&gt; H1 H3
-
-  1 2 3 4 5 6 7 8 9 10
-A O ~ ~ ~ ~ ~ ~ ~ ~ ~
-B O ~ ~ ~ ~ ~ ~ ~ ~ ~
-C O ~ ~ ~ ~ ~ ~ O ~ ~
-D ~ ~ ~ ~ ~ ~ ~ O ~ ~
-E ~ ~ ~ ~ ~ ~ ~ O ~ ~
-F ~ ~ ~ ~ ~ ~ ~ O ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H O O O ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ O O O O O ~ ~ ~
-
-Enter the coordinates of the Destroyer (2 cells):
-&gt; G2 E2
-Error! Wrong length of the Destroyer! Try again:
-&gt; B5 C5
-
-  1 2 3 4 5 6 7 8 9 10
-A O ~ ~ ~ ~ ~ ~ ~ ~ ~
-B O ~ ~ ~ O ~ ~ ~ ~ ~
-C O ~ ~ ~ O ~ ~ O ~ ~
-D ~ ~ ~ ~ ~ ~ ~ O ~ ~
-E ~ ~ ~ ~ ~ ~ ~ O ~ ~
-F ~ ~ ~ ~ ~ ~ ~ O ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H O O O ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ O O O O O ~ ~ ~
-
-The game starts!
-
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -683,14 +304,154 @@ G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ O ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
 
-Take a shot!
+Player 1, it's your turn:
+
+&gt; I3
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ O ~ ~
+D ~ ~ ~ O O O ~ O ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; C9
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ X ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; D4
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ X ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ O ~ ~
+D ~ ~ ~ X O O ~ O ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
 &gt; A1
 
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ X ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ X ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; D5
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
 A X ~ ~ ~ ~ ~ ~ ~ ~ ~
 B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ X ~
 D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -698,29 +459,61 @@ G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; A2
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ O ~ ~
+D ~ ~ ~ X X O ~ O ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-You missed. Try again:
+Player 2, it's your turn:
+
 &gt; B1
 
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ X X ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ X ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; D6
+
+You sank a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ X ~
 D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -728,14 +521,61 @@ G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ O ~ ~
+D ~ ~ ~ X X X ~ O ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-You hit a ship! Try again:
+Player 2, it's your turn:
+
 &gt; C1
 
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ X X X ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ O ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; C8
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
 B X ~ ~ ~ ~ ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
 D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -743,381 +583,828 @@ G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ O ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-You sank a ship! Specify a new target:
+Player 2, it's your turn:
+
 &gt; D1
 
+You sank a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ O ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; D8
+
+You sank a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
 B X ~ ~ ~ ~ ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-You missed. Try again:
+Player 2, it's your turn:
+
+&gt; B9
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; F3
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X O O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; C9
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; F4
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X O O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; D9
+
+You sank a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
 &gt; F5
 
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ ~ ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ M ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; B5
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ ~ X ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ M ~ ~ ~ ~ ~
+F ~ ~ X X X O ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; F3
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; F6
+
+You sank a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X ~ ~ ~ ~ ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; B4
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ ~ ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ M ~ ~ ~ ~ ~
+F ~ ~ X X X X ~ O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; F4
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; F7
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X ~ ~ ~ ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; C5
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ M ~ ~ ~ ~ ~
+F ~ ~ X X X X M O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; F5
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X M ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; D10
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X ~ ~ ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You sank a ship! Specify a new target:
-&gt; H8
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ M ~ ~ ~ ~ ~
+F ~ ~ X X X X M O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; F6
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X M ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; F8
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
+F ~ ~ X X X X O ~ ~ ~
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
 
-You hit a ship! Try again:
-&gt; G8
+Player 1, it's your turn:
 
+&gt; E10
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
+F ~ ~ X X X X ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; E8
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ ~ ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M O ~ ~
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; F7
+
+You sank a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; F10
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; D8
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ ~ ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M O ~ M
+G ~ ~ ~ ~ ~ ~ ~ O ~ ~
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-You hit a ship! Try again:
-&gt; C8
+Player 2, it's your turn:
 
+&gt; I2
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M ~ ~ M
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+
+Player 1, it's your turn:
+
+&gt; G10
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M O ~ M
+G ~ ~ ~ ~ ~ ~ ~ O ~ M
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-You sank a ship! Specify a new target:
-&gt; D8
+Player 2, it's your turn:
 
+&gt; J2
+
+You sank a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M ~ ~ M
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; I9
-
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H ~ ~ ~ ~ ~ ~ ~ M ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ M ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ X ~ ~ ~ ~ ~ O O O
 
-You missed. Try again:
-&gt; H1
+Player 1, it's your turn:
 
+&gt; J1
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X ~ ~ ~ ~ ~ ~ M ~ ~
-I ~ ~ ~ ~ ~ ~ ~ ~ M ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; I1
-
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ X ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X ~ ~ ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ ~ M ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M O ~ M
+G ~ ~ ~ ~ ~ ~ ~ O ~ M
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J M ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-You missed. Try again:
-&gt; H2
+Player 2, it's your turn:
 
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X ~ ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ ~ M ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You hit a ship! Try again:
-&gt; H3
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ ~ ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ ~ M ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You sank a ship! Specify a new target:
-&gt; E2
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ ~ M ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; I8
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ M M ~
-J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-You missed. Try again:
-&gt; J7
-
-  1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ M M ~
-J ~ ~ ~ ~ ~ ~ X ~ ~ ~
-
-You hit a ship! Try again:
 &gt; J8
 
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ M M ~
-J ~ ~ ~ ~ ~ ~ X M ~ ~
-
-You missed. Try again:
-&gt; J6
-
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M ~ ~ M
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J M ~ ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ M M ~
-J ~ ~ ~ ~ ~ X X M ~ ~
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ X ~ ~ ~ ~ ~ X O O
 
-You hit a ship! Try again:
-&gt; J5
+Player 1, it's your turn:
 
+&gt; J2
+
+You missed!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ M M ~
-J ~ ~ ~ ~ X X X M ~ ~
-
-You hit a ship! Try again:
-&gt; J4
-
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ X ~ ~ ~ ~ ~ X ~ ~
+---------------------
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ M M ~
-J ~ ~ ~ X X X X M ~ ~
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M O ~ M
+G ~ ~ ~ ~ ~ ~ ~ O ~ M
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J M M ~ ~ ~ ~ ~ ~ ~ ~
 
-You hit a ship! Try again:
+Player 2, it's your turn:
+
+&gt; J9
+
+You hit a ship!
+Press Enter and pass the move to another player
+&gt; 
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M ~ ~ M
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J M M ~ ~ ~ ~ ~ ~ ~ ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ X ~ ~ ~ ~ ~ X X O
+
+Player 1, it's your turn:
+
 &gt; J3
 
+You missed!
+Press Enter and pass the move to another player
+&gt; 
   1 2 3 4 5 6 7 8 9 10
-A X M ~ ~ ~ ~ ~ ~ ~ ~
-B X ~ ~ M X ~ ~ ~ ~ ~
-C X ~ ~ ~ X ~ ~ X ~ ~
-D M ~ ~ ~ ~ ~ ~ X ~ ~
-E ~ M ~ ~ ~ ~ ~ X ~ ~
-F ~ ~ ~ ~ M ~ ~ X ~ ~
-G ~ ~ ~ ~ ~ ~ ~ M ~ ~
-H X X X ~ ~ ~ ~ M ~ ~
-I M ~ ~ ~ ~ ~ ~ M M ~
-J ~ ~ X X X X X M ~ ~
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~
+B X ~ ~ ~ ~ ~ ~ ~ X ~
+C X ~ ~ ~ ~ ~ ~ ~ X ~
+D X ~ ~ ~ ~ ~ ~ ~ X ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ X X X X X ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ X ~ ~ ~ ~ ~ ~ ~ ~
+J ~ X ~ ~ ~ ~ ~ X X ~
+---------------------
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ X ~ ~
+D ~ ~ ~ X X X ~ X ~ M
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ M
+F ~ ~ X X X X M O ~ M
+G ~ ~ ~ ~ ~ ~ ~ O ~ M
+H ~ O O O O O ~ O ~ ~
+I ~ ~ M ~ ~ ~ ~ ~ ~ ~
+J M M M ~ ~ ~ ~ ~ ~ ~
+
+Player 2, it's your turn:
+
+&gt; J10
 
 You sank the last ship. You won. Congratulations!
 </pre>
@@ -1131,7 +1418,7 @@ You sank the last ship. You won. Congratulations!
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at Apr 4, 2024, 11:07:59 PM</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at Apr 5, 2024, 5:15:26 PM</p>
 </div>
 </div>
 </body>
